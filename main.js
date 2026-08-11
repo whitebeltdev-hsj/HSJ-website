@@ -294,7 +294,7 @@
                    "kids":"kids", "wrestling":"wrestling", "muay thai":"muaythai",
                    "open mat":"openmat", "competition":"competition" };
         var key = live ? BG[live.name.replace(/\u2011|\u2010/g, "-").toLowerCase().trim()] : null;
-        var want = key ? "/assets/img/bg/" + key + ".jpg" : "";
+        var want = key ? "/HSJ-website/assets/img/bg/" + key + ".jpg" : "";
         if (bgLayer.getAttribute("data-want") !== want) {
           bgLayer.setAttribute("data-want", want);
           if (!want) {

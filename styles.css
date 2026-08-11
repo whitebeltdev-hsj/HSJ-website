@@ -6,7 +6,7 @@
   font-weight: 500;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -15,7 +15,7 @@
   font-weight: 500;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -24,7 +24,7 @@
   font-weight: 600;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -33,7 +33,7 @@
   font-weight: 600;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -42,7 +42,7 @@
   font-weight: 700;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -51,7 +51,7 @@
   font-weight: 700;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -60,7 +60,7 @@
   font-weight: 800;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -69,7 +69,7 @@
   font-weight: 800;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -78,7 +78,7 @@
   font-weight: 900;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -87,7 +87,7 @@
   font-weight: 900;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/saira-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -95,7 +95,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/assets/fonts/saira-condensed-600-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-condensed-600-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -103,7 +103,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/assets/fonts/saira-condensed-600-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-condensed-600-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -111,7 +111,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/assets/fonts/saira-condensed-700-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-condensed-700-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -119,7 +119,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/assets/fonts/saira-condensed-700-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-condensed-700-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -127,7 +127,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(/assets/fonts/saira-condensed-800-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-condensed-800-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -135,7 +135,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(/assets/fonts/saira-condensed-800-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/saira-condensed-800-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -143,7 +143,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -151,7 +151,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -159,7 +159,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -167,7 +167,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -175,7 +175,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -183,7 +183,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -191,7 +191,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -199,7 +199,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -207,7 +207,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -215,7 +215,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
+  src: url(/HSJ-website/assets/fonts/space-grotesk-var-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -1142,7 +1142,7 @@ main > .section:first-of-type{padding-top:calc(var(--head-h) + clamp(36px,5vw,60
 .vslot__frame:not(:has(.vslot__poster)):not(:has(video)){grid-auto-flow:row;place-content:center;justify-items:center;gap:12px}
 .place__pin{width:16px;height:16px;margin-right:9px;vertical-align:-2px}
 .foot__visit .ic{width:15px;height:15px;margin-right:9px;color:var(--brass-bright);vertical-align:-2px}
-.pcard__list li::before{border:0;border-radius:0;top:4px;width:14px;height:14px;background:var(--brass);-webkit-mask:url(/assets/icons/check.png) center/contain no-repeat;mask:url(/assets/icons/check.png) center/contain no-repeat}
+.pcard__list li::before{border:0;border-radius:0;top:4px;width:14px;height:14px;background:var(--brass);-webkit-mask:url(/HSJ-website/assets/icons/check.png) center/contain no-repeat;mask:url(/HSJ-website/assets/icons/check.png) center/contain no-repeat}
 
 /* ============== GOLD FOIL: marquee bands (2026-08-01) ==============
    Stamped gold foil; the gradient position binds to scroll progress
@@ -1213,15 +1213,15 @@ main > .section:first-of-type{padding-top:calc(var(--head-h) + clamp(36px,5vw,60
    AI-drawn line icons as alpha masks colored by currentColor; the
    martial-arts program glyphs replace the generic placeholders. */
 .icm{display:inline-block;background:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain}
-.icm--adults{-webkit-mask-image:url(/assets/icons/adults.png);mask-image:url(/assets/icons/adults.png)}
-.icm--kids{-webkit-mask-image:url(/assets/icons/kids.png);mask-image:url(/assets/icons/kids.png)}
-.icm--muaythai{-webkit-mask-image:url(/assets/icons/muaythai.png);mask-image:url(/assets/icons/muaythai.png)}
-.icm--wrestling{-webkit-mask-image:url(/assets/icons/wrestling.png);mask-image:url(/assets/icons/wrestling.png)}
-.icm--play{-webkit-mask-image:url(/assets/icons/play.png);mask-image:url(/assets/icons/play.png)}
-.icm--pin{-webkit-mask-image:url(/assets/icons/pin.png);mask-image:url(/assets/icons/pin.png)}
-.icm--phone{-webkit-mask-image:url(/assets/icons/phone.png);mask-image:url(/assets/icons/phone.png)}
-.icm--mail{-webkit-mask-image:url(/assets/icons/mail.png);mask-image:url(/assets/icons/mail.png)}
-.icm--clock{-webkit-mask-image:url(/assets/icons/clock.png);mask-image:url(/assets/icons/clock.png)}
+.icm--adults{-webkit-mask-image:url(/HSJ-website/assets/icons/adults.png);mask-image:url(/HSJ-website/assets/icons/adults.png)}
+.icm--kids{-webkit-mask-image:url(/HSJ-website/assets/icons/kids.png);mask-image:url(/HSJ-website/assets/icons/kids.png)}
+.icm--muaythai{-webkit-mask-image:url(/HSJ-website/assets/icons/muaythai.png);mask-image:url(/HSJ-website/assets/icons/muaythai.png)}
+.icm--wrestling{-webkit-mask-image:url(/HSJ-website/assets/icons/wrestling.png);mask-image:url(/HSJ-website/assets/icons/wrestling.png)}
+.icm--play{-webkit-mask-image:url(/HSJ-website/assets/icons/play.png);mask-image:url(/HSJ-website/assets/icons/play.png)}
+.icm--pin{-webkit-mask-image:url(/HSJ-website/assets/icons/pin.png);mask-image:url(/HSJ-website/assets/icons/pin.png)}
+.icm--phone{-webkit-mask-image:url(/HSJ-website/assets/icons/phone.png);mask-image:url(/HSJ-website/assets/icons/phone.png)}
+.icm--mail{-webkit-mask-image:url(/HSJ-website/assets/icons/mail.png);mask-image:url(/HSJ-website/assets/icons/mail.png)}
+.icm--clock{-webkit-mask-image:url(/HSJ-website/assets/icons/clock.png);mask-image:url(/HSJ-website/assets/icons/clock.png)}
 
 /* Program pictograms: vector, white, sized to the tab (2026-08-01) */
 .pic{fill:currentColor;stroke:none}
