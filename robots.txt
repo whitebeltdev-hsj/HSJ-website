@@ -1,0 +1,4 @@
+# v3 preview guard: this deployment is a working copy at the v3 preview URL.
+# Do not index until the cutover decision lands (see docs/requirements/REQ-001).
+User-agent: *
+Disallow: /
