@@ -1,0 +1,104 @@
+# Schedule sync: reads the gym's Google Calendar feed (the SCHEDULE_ICS_URL
+# repository secret) every 20 minutes and updates the published schedule when
+# it changed. Guards (unknown class names, slot collisions, a week that
+# shrank by half or more) hold the publish and report through a GitHub issue
+# labeled schedule-sync instead. A manual run with allow_shrink accepts an
+# intentionally smaller week. Note: GitHub pauses cron workflows after 60
+# days without repository activity; the Actions tab shows a re-enable banner
+# if that ever happens.
+name: Schedule sync
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+    inputs:
+      allow_shrink:
+        description: "Publish even if the schedule shrank by half or more"
+        type: boolean
+        default: false
+concurrency:
+  group: schedule-sync
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+  pages: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned dependencies
+        run: pip install --quiet icalendar==6.1.1 recurring-ical-events==3.3.4
+      # until the owner seals the SCHEDULE_ICS_URL secret, every run is a
+      # clean no-op instead of a failure parade
+      - name: Check configuration
+        id: config
+        env:
+          HAS_SECRET: ${{ secrets.SCHEDULE_ICS_URL != '' }}
+        run: |
+          echo "ready=$HAS_SECRET" >> "$GITHUB_OUTPUT"
+          [ "$HAS_SECRET" = "true" ] || echo "SCHEDULE_ICS_URL not set yet; nothing to sync"
+      - name: Sync schedule from calendar
+        if: steps.config.outputs.ready == 'true'
+        id: sync
+        env:
+          SCHEDULE_ICS_URL: ${{ secrets.SCHEDULE_ICS_URL }}
+        run: |
+          set +e
+          EXTRA=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.allow_shrink }}" = "true" ]; then
+            EXTRA="--allow-shrink"
+          fi
+          python scripts/schedule_sync.py $EXTRA --report sync-report.md
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+      - name: Commit and deploy the new schedule
+        if: steps.sync.outputs.code == '0' && steps.sync.outputs.changed == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "schedule-sync[bot]"
+          git config user.email "schedule-sync[bot]@users.noreply.github.com"
+          git add schedule/index.html calendar/
+          git commit -m "chore(schedule): calendar sync $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
+          # request a Pages build explicitly: token pushes are not guaranteed
+          # to trigger the branch build on their own
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
+      - name: Report a held publish as an issue
+        if: steps.sync.outputs.code == '2' || steps.sync.outputs.code == '3'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create schedule-sync --color B45309 \
+            --description "The class schedule sync needs a human" --force
+          TITLE="Schedule sync needs attention"
+          [ "${{ steps.sync.outputs.code }}" = "3" ] && TITLE="Schedule sync held: the week looks much smaller than usual"
+          OPEN=$(gh issue list --label schedule-sync --state open --json number --jq '.[0].number')
+          if [ -n "$OPEN" ]; then
+            gh issue comment "$OPEN" --body-file sync-report.md
+          else
+            gh issue create --title "$TITLE" --label schedule-sync --body-file sync-report.md
+          fi
+      - name: Alert after three straight fetch failures
+        if: steps.sync.outputs.code == '4'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PRIOR=$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/schedule-sync.yml/runs?event=schedule&status=completed&per_page=2" \
+            --jq '[.workflow_runs[].conclusion] | map(select(. == "failure")) | length')
+          if [ "$PRIOR" = "2" ]; then
+            gh label create schedule-sync --color B45309 \
+              --description "The class schedule sync needs a human" --force
+            OPEN=$(gh issue list --label schedule-sync --state open --json number --jq '.[0].number')
+            if [ -n "$OPEN" ]; then
+              gh issue comment "$OPEN" --body-file sync-report.md
+            else
+              gh issue create --title "Schedule sync cannot reach the calendar" \
+                --label schedule-sync --body-file sync-report.md
+            fi
+          fi
+          exit 1

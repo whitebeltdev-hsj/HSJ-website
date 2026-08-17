@@ -1,0 +1,13 @@
+{
+  "comment": "Class names the schedule sync recognizes. display is rendered verbatim (U+2011 non-breaking hyphens included); matching against calendar event titles is case-insensitive and treats ASCII hyphens and U+2011 as the same character. category drives the scell color class and the per-program feeds; badge is the small audience label in the cell.",
+  "classes": [
+    { "display": "Fundamentals", "category": "adults", "badge": "Adults" },
+    { "display": "No‑Gi", "category": "adults", "badge": "Adults" },
+    { "display": "All‑Levels", "category": "adults", "badge": "Adults" },
+    { "display": "Open Mat", "category": "adults", "badge": "All welcome" },
+    { "display": "Competition", "category": "adults", "badge": "Advanced" },
+    { "display": "Kids", "category": "kids", "badge": "Ages 4-15" },
+    { "display": "Muay Thai", "category": "muaythai", "badge": "All levels" },
+    { "display": "Wrestling", "category": "wrestling", "badge": "All levels" }
+  ]
+}
