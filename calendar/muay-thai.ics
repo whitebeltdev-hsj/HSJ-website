@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//High Street Jiu Jitsu//Class schedule//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:High Street Jiu Jitsu Muay Thai
+X-WR-CALNAME:High Street Jiu Jitsu Striking
 X-WR-TIMEZONE:America/Phoenix
 BEGIN:VTIMEZONE
 TZID:America/Phoenix
@@ -15,22 +15,57 @@ TZNAME:MST
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:hsjj-2-1050-muay-thai@highstreetjiujitsu.com
-DTSTAMP:20260106T000000Z
-DTSTART;TZID=America/Phoenix:20260106T173000
-DTEND;TZID=America/Phoenix:20260106T183000
-RRULE:FREQ=WEEKLY;BYDAY=TU
-SUMMARY:Muay Thai
+UID:hsjj-1-1140-striking-class@highstreetjiujitsu.com
+DTSTAMP:20260105T000000Z
+DTSTART;TZID=America/Phoenix:20260105T190000
+DTEND;TZID=America/Phoenix:20260105T200000
+RRULE:FREQ=WEEKLY;BYDAY=MO
+SUMMARY:Striking Class
+CATEGORIES:Striking,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-4-1050-muay-thai@highstreetjiujitsu.com
+UID:hsjj-2-1140-striking-class@highstreetjiujitsu.com
+DTSTAMP:20260106T000000Z
+DTSTART;TZID=America/Phoenix:20260106T190000
+DTEND;TZID=America/Phoenix:20260106T200000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+SUMMARY:Striking Class
+CATEGORIES:Striking,Adults,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-3-1140-striking-class@highstreetjiujitsu.com
+DTSTAMP:20260107T000000Z
+DTSTART;TZID=America/Phoenix:20260107T190000
+DTEND;TZID=America/Phoenix:20260107T200000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+SUMMARY:Striking Class
+CATEGORIES:Striking,Adults,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-4-1140-striking-class@highstreetjiujitsu.com
 DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T173000
-DTEND;TZID=America/Phoenix:20260108T183000
+DTSTART;TZID=America/Phoenix:20260108T190000
+DTEND;TZID=America/Phoenix:20260108T200000
 RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:Muay Thai
+SUMMARY:Striking Class
+CATEGORIES:Striking,Adults,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-5-900-advanced-striking@highstreetjiujitsu.com
+DTSTAMP:20260109T000000Z
+DTSTART;TZID=America/Phoenix:20260109T150000
+DTEND;TZID=America/Phoenix:20260109T160000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+SUMMARY:Advanced Striking
+CATEGORIES:Striking,Adults,Advanced
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT

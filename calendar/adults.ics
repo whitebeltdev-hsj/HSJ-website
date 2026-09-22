@@ -15,232 +15,200 @@ TZNAME:MST
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:hsjj-1-360-no-gi@highstreetjiujitsu.com
+UID:hsjj-1-390-jiu-jitsu-morning-class-gi@highstreetjiujitsu.com
 DTSTAMP:20260105T000000Z
-DTSTART;TZID=America/Phoenix:20260105T060000
-DTEND;TZID=America/Phoenix:20260105T070000
+DTSTART;TZID=America/Phoenix:20260105T063000
+DTEND;TZID=America/Phoenix:20260105T073000
 RRULE:FREQ=WEEKLY;BYDAY=MO
-SUMMARY:No-Gi
+SUMMARY:Jiu Jitsu Morning Class: GI
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-1-720-all-levels@highstreetjiujitsu.com
+UID:hsjj-1-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
 DTSTAMP:20260105T000000Z
-DTSTART;TZID=America/Phoenix:20260105T120000
-DTEND;TZID=America/Phoenix:20260105T130000
+DTSTART;TZID=America/Phoenix:20260105T173000
+DTEND;TZID=America/Phoenix:20260105T180000
 RRULE:FREQ=WEEKLY;BYDAY=MO
-SUMMARY:All-Levels
+SUMMARY:Jiu Jitsu Drilling
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-1-1110-fundamentals@highstreetjiujitsu.com
+UID:hsjj-1-1080-all-levels-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260105T000000Z
-DTSTART;TZID=America/Phoenix:20260105T183000
-DTEND;TZID=America/Phoenix:20260105T193000
+DTSTART;TZID=America/Phoenix:20260105T180000
+DTEND;TZID=America/Phoenix:20260105T191500
 RRULE:FREQ=WEEKLY;BYDAY=MO
-SUMMARY:Fundamentals
+SUMMARY:All Levels Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-1-1170-all-levels@highstreetjiujitsu.com
-DTSTAMP:20260105T000000Z
-DTSTART;TZID=America/Phoenix:20260105T193000
-DTEND;TZID=America/Phoenix:20260105T203000
-RRULE:FREQ=WEEKLY;BYDAY=MO
-SUMMARY:All-Levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-2-360-fundamentals@highstreetjiujitsu.com
-DTSTAMP:20260106T000000Z
-DTSTART;TZID=America/Phoenix:20260106T060000
-DTEND;TZID=America/Phoenix:20260106T070000
-RRULE:FREQ=WEEKLY;BYDAY=TU
-SUMMARY:Fundamentals
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-2-720-all-levels@highstreetjiujitsu.com
+UID:hsjj-2-720-all-levels-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260106T000000Z
 DTSTART;TZID=America/Phoenix:20260106T120000
 DTEND;TZID=America/Phoenix:20260106T130000
 RRULE:FREQ=WEEKLY;BYDAY=TU
-SUMMARY:All-Levels
+SUMMARY:All Levels Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-2-1110-fundamentals@highstreetjiujitsu.com
+UID:hsjj-2-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
 DTSTAMP:20260106T000000Z
-DTSTART;TZID=America/Phoenix:20260106T183000
-DTEND;TZID=America/Phoenix:20260106T193000
+DTSTART;TZID=America/Phoenix:20260106T173000
+DTEND;TZID=America/Phoenix:20260106T180000
 RRULE:FREQ=WEEKLY;BYDAY=TU
-SUMMARY:Fundamentals
+SUMMARY:Jiu Jitsu Drilling
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-2-1170-competition@highstreetjiujitsu.com
+UID:hsjj-2-1080-all-levels-jiu-jitsu-no-gi@highstreetjiujitsu.com
 DTSTAMP:20260106T000000Z
-DTSTART;TZID=America/Phoenix:20260106T193000
-DTEND;TZID=America/Phoenix:20260106T203000
+DTSTART;TZID=America/Phoenix:20260106T180000
+DTEND;TZID=America/Phoenix:20260106T191500
 RRULE:FREQ=WEEKLY;BYDAY=TU
-SUMMARY:Competition
+SUMMARY:All Levels Jiu Jitsu: No-Gi
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-360-no-gi@highstreetjiujitsu.com
+UID:hsjj-3-390-jiu-jitsu-morning-class-gi@highstreetjiujitsu.com
 DTSTAMP:20260107T000000Z
-DTSTART;TZID=America/Phoenix:20260107T060000
-DTEND;TZID=America/Phoenix:20260107T070000
+DTSTART;TZID=America/Phoenix:20260107T063000
+DTEND;TZID=America/Phoenix:20260107T073000
 RRULE:FREQ=WEEKLY;BYDAY=WE
-SUMMARY:No-Gi
+SUMMARY:Jiu Jitsu Morning Class: GI
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-720-all-levels@highstreetjiujitsu.com
+UID:hsjj-3-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
 DTSTAMP:20260107T000000Z
-DTSTART;TZID=America/Phoenix:20260107T120000
-DTEND;TZID=America/Phoenix:20260107T130000
+DTSTART;TZID=America/Phoenix:20260107T173000
+DTEND;TZID=America/Phoenix:20260107T180000
 RRULE:FREQ=WEEKLY;BYDAY=WE
-SUMMARY:All-Levels
+SUMMARY:Jiu Jitsu Drilling
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-1110-fundamentals@highstreetjiujitsu.com
+UID:hsjj-3-1080-all-levels-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260107T000000Z
-DTSTART;TZID=America/Phoenix:20260107T183000
-DTEND;TZID=America/Phoenix:20260107T193000
+DTSTART;TZID=America/Phoenix:20260107T180000
+DTEND;TZID=America/Phoenix:20260107T191500
 RRULE:FREQ=WEEKLY;BYDAY=WE
-SUMMARY:Fundamentals
+SUMMARY:All Levels Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-1170-all-levels@highstreetjiujitsu.com
-DTSTAMP:20260107T000000Z
-DTSTART;TZID=America/Phoenix:20260107T193000
-DTEND;TZID=America/Phoenix:20260107T203000
-RRULE:FREQ=WEEKLY;BYDAY=WE
-SUMMARY:All-Levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-4-360-fundamentals@highstreetjiujitsu.com
-DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T060000
-DTEND;TZID=America/Phoenix:20260108T070000
-RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:Fundamentals
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-4-720-all-levels@highstreetjiujitsu.com
+UID:hsjj-4-720-all-levels-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260108T000000Z
 DTSTART;TZID=America/Phoenix:20260108T120000
 DTEND;TZID=America/Phoenix:20260108T130000
 RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:All-Levels
+SUMMARY:All Levels Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-4-1110-fundamentals@highstreetjiujitsu.com
+UID:hsjj-4-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
 DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T183000
-DTEND;TZID=America/Phoenix:20260108T193000
+DTSTART;TZID=America/Phoenix:20260108T173000
+DTEND;TZID=America/Phoenix:20260108T180000
 RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:Fundamentals
+SUMMARY:Jiu Jitsu Drilling
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-4-1170-competition@highstreetjiujitsu.com
+UID:hsjj-4-1080-all-levels-jiu-jitsu-no-gi@highstreetjiujitsu.com
 DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T193000
-DTEND;TZID=America/Phoenix:20260108T203000
+DTSTART;TZID=America/Phoenix:20260108T180000
+DTEND;TZID=America/Phoenix:20260108T191500
 RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:Competition
+SUMMARY:All Levels Jiu Jitsu: No-Gi
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-360-no-gi@highstreetjiujitsu.com
+UID:hsjj-5-390-jiu-jitsu-morning-class-no-gi@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T060000
-DTEND;TZID=America/Phoenix:20260109T070000
+DTSTART;TZID=America/Phoenix:20260109T063000
+DTEND;TZID=America/Phoenix:20260109T073000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:No-Gi
+SUMMARY:Jiu Jitsu Morning Class: NO-GI
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-720-all-levels@highstreetjiujitsu.com
+UID:hsjj-5-720-all-levels-jiu-jitsu-no-gi@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
 DTSTART;TZID=America/Phoenix:20260109T120000
 DTEND;TZID=America/Phoenix:20260109T130000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:All-Levels
+SUMMARY:All Levels Jiu Jitsu: No-Gi
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-1050-open-mat@highstreetjiujitsu.com
+UID:hsjj-5-1050-competition-class@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
 DTSTART;TZID=America/Phoenix:20260109T173000
-DTEND;TZID=America/Phoenix:20260109T183000
+DTEND;TZID=America/Phoenix:20260109T180000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Open Mat
+SUMMARY:Competition Class
+CATEGORIES:Adults,Advanced
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-1110-fundamentals@highstreetjiujitsu.com
+UID:hsjj-5-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T183000
-DTEND;TZID=America/Phoenix:20260109T193000
+DTSTART;TZID=America/Phoenix:20260109T173000
+DTEND;TZID=America/Phoenix:20260109T180000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Fundamentals
+SUMMARY:Jiu Jitsu Drilling
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-1170-all-levels@highstreetjiujitsu.com
+UID:hsjj-5-1080-all-levels-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T193000
-DTEND;TZID=America/Phoenix:20260109T203000
+DTSTART;TZID=America/Phoenix:20260109T180000
+DTEND;TZID=America/Phoenix:20260109T191500
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:All-Levels
+SUMMARY:All Levels Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-6-1050-all-levels@highstreetjiujitsu.com
+UID:hsjj-6-960-saturday-open-mat@highstreetjiujitsu.com
 DTSTAMP:20260110T000000Z
-DTSTART;TZID=America/Phoenix:20260110T173000
-DTEND;TZID=America/Phoenix:20260110T183000
+DTSTART;TZID=America/Phoenix:20260110T160000
+DTEND;TZID=America/Phoenix:20260110T200000
 RRULE:FREQ=WEEKLY;BYDAY=SA
-SUMMARY:All-Levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-6-1110-open-mat@highstreetjiujitsu.com
-DTSTAMP:20260110T000000Z
-DTSTART;TZID=America/Phoenix:20260110T183000
-DTEND;TZID=America/Phoenix:20260110T193000
-RRULE:FREQ=WEEKLY;BYDAY=SA
-SUMMARY:Open Mat
+SUMMARY:Saturday Open Mat
+CATEGORIES:Jiu Jitsu,All welcome,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT

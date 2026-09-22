@@ -1,0 +1,274 @@
+{
+  "generated": "2026-09-21T18:13:19-07:00",
+  "days": {
+    "0": [],
+    "1": [
+      {
+        "t": "6:30am",
+        "label": "Jiu Jitsu Morning Class: GI",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "3:45pm",
+        "label": "Little Rattlers: Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 45
+      },
+      {
+        "t": "4:30pm",
+        "label": "Kids Jiu Jitsu: Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "5:30pm",
+        "label": "Jiu Jitsu Drilling",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 30
+      },
+      {
+        "t": "6:00pm",
+        "label": "All Levels Jiu Jitsu: Gi",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 75
+      },
+      {
+        "t": "7:00pm",
+        "label": "Striking Class",
+        "prog": "Adults",
+        "cat": "muaythai",
+        "lvl": "All levels",
+        "mins": 60
+      }
+    ],
+    "2": [
+      {
+        "t": "11:00am",
+        "label": "Kids Jiu Jitsu: Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "12:00pm",
+        "label": "All Levels Jiu Jitsu: Gi",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "4:30pm",
+        "label": "Kids Jiu Jitsu: No-Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "5:30pm",
+        "label": "Jiu Jitsu Drilling",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 30
+      },
+      {
+        "t": "6:00pm",
+        "label": "All Levels Jiu Jitsu: No-Gi",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 75
+      },
+      {
+        "t": "7:00pm",
+        "label": "Striking Class",
+        "prog": "Adults",
+        "cat": "muaythai",
+        "lvl": "All levels",
+        "mins": 60
+      }
+    ],
+    "3": [
+      {
+        "t": "6:30am",
+        "label": "Jiu Jitsu Morning Class: GI",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "3:45pm",
+        "label": "Little Rattlers: Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 45
+      },
+      {
+        "t": "4:30pm",
+        "label": "Kids Jiu Jitsu: Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "5:30pm",
+        "label": "Jiu Jitsu Drilling",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 30
+      },
+      {
+        "t": "6:00pm",
+        "label": "All Levels Jiu Jitsu: Gi",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 75
+      },
+      {
+        "t": "7:00pm",
+        "label": "Striking Class",
+        "prog": "Adults",
+        "cat": "muaythai",
+        "lvl": "All levels",
+        "mins": 60
+      }
+    ],
+    "4": [
+      {
+        "t": "11:00am",
+        "label": "Kids Jiu Jitsu: Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "12:00pm",
+        "label": "All Levels Jiu Jitsu: Gi",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "4:30pm",
+        "label": "Kids Jiu Jitsu: No-Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "5:30pm",
+        "label": "Jiu Jitsu Drilling",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 30
+      },
+      {
+        "t": "6:00pm",
+        "label": "All Levels Jiu Jitsu: No-Gi",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 75
+      },
+      {
+        "t": "7:00pm",
+        "label": "Striking Class",
+        "prog": "Adults",
+        "cat": "muaythai",
+        "lvl": "All levels",
+        "mins": 60
+      }
+    ],
+    "5": [
+      {
+        "t": "6:30am",
+        "label": "Jiu Jitsu Morning Class: NO-GI",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "12:00pm",
+        "label": "All Levels Jiu Jitsu: No-Gi",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "3:00pm",
+        "label": "Advanced Striking",
+        "prog": "Adults",
+        "cat": "muaythai",
+        "lvl": "Advanced",
+        "mins": 60
+      },
+      {
+        "t": "4:30pm",
+        "label": "Kids Jiu Jitsu: Gi",
+        "prog": "Kids",
+        "cat": "kids",
+        "lvl": "All levels",
+        "mins": 60
+      },
+      {
+        "t": "5:30pm",
+        "label": "Competition Class",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "Advanced",
+        "mins": 30
+      },
+      {
+        "t": "5:30pm",
+        "label": "Jiu Jitsu Drilling",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 30
+      },
+      {
+        "t": "6:00pm",
+        "label": "All Levels Jiu Jitsu: Gi",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 75
+      }
+    ],
+    "6": [
+      {
+        "t": "4:00pm",
+        "label": "Saturday Open Mat",
+        "prog": "All welcome",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 240
+      }
+    ]
+  }
+}

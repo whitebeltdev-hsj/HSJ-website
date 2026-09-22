@@ -15,62 +15,101 @@ TZNAME:MST
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:hsjj-1-990-kids@highstreetjiujitsu.com
+UID:hsjj-1-945-little-rattlers-gi@highstreetjiujitsu.com
+DTSTAMP:20260105T000000Z
+DTSTART;TZID=America/Phoenix:20260105T154500
+DTEND;TZID=America/Phoenix:20260105T163000
+RRULE:FREQ=WEEKLY;BYDAY=MO
+SUMMARY:Little Rattlers: Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-1-990-kids-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260105T000000Z
 DTSTART;TZID=America/Phoenix:20260105T163000
 DTEND;TZID=America/Phoenix:20260105T173000
 RRULE:FREQ=WEEKLY;BYDAY=MO
-SUMMARY:Kids
+SUMMARY:Kids Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-2-990-kids@highstreetjiujitsu.com
+UID:hsjj-2-660-kids-jiu-jitsu-gi@highstreetjiujitsu.com
+DTSTAMP:20260106T000000Z
+DTSTART;TZID=America/Phoenix:20260106T110000
+DTEND;TZID=America/Phoenix:20260106T120000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+SUMMARY:Kids Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-2-990-kids-jiu-jitsu-no-gi@highstreetjiujitsu.com
 DTSTAMP:20260106T000000Z
 DTSTART;TZID=America/Phoenix:20260106T163000
 DTEND;TZID=America/Phoenix:20260106T173000
 RRULE:FREQ=WEEKLY;BYDAY=TU
-SUMMARY:Kids
+SUMMARY:Kids Jiu Jitsu: No-Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-990-kids@highstreetjiujitsu.com
+UID:hsjj-3-945-little-rattlers-gi@highstreetjiujitsu.com
+DTSTAMP:20260107T000000Z
+DTSTART;TZID=America/Phoenix:20260107T154500
+DTEND;TZID=America/Phoenix:20260107T163000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+SUMMARY:Little Rattlers: Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-3-990-kids-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260107T000000Z
 DTSTART;TZID=America/Phoenix:20260107T163000
 DTEND;TZID=America/Phoenix:20260107T173000
 RRULE:FREQ=WEEKLY;BYDAY=WE
-SUMMARY:Kids
+SUMMARY:Kids Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-4-990-kids@highstreetjiujitsu.com
+UID:hsjj-4-660-kids-jiu-jitsu-gi@highstreetjiujitsu.com
+DTSTAMP:20260108T000000Z
+DTSTART;TZID=America/Phoenix:20260108T110000
+DTEND;TZID=America/Phoenix:20260108T120000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:Kids Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-4-990-kids-jiu-jitsu-no-gi@highstreetjiujitsu.com
 DTSTAMP:20260108T000000Z
 DTSTART;TZID=America/Phoenix:20260108T163000
 DTEND;TZID=America/Phoenix:20260108T173000
 RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:Kids
+SUMMARY:Kids Jiu Jitsu: No-Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-990-kids@highstreetjiujitsu.com
+UID:hsjj-5-990-kids-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
 DTSTART;TZID=America/Phoenix:20260109T163000
 DTEND;TZID=America/Phoenix:20260109T173000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Kids
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-6-960-kids@highstreetjiujitsu.com
-DTSTAMP:20260110T000000Z
-DTSTART;TZID=America/Phoenix:20260110T160000
-DTEND;TZID=America/Phoenix:20260110T170000
-RRULE:FREQ=WEEKLY;BYDAY=SA
-SUMMARY:Kids
+SUMMARY:Kids Jiu Jitsu: Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
