@@ -1,9 +1,11 @@
 # Schedule sync: reads the gym's Google Calendar feed (the SCHEDULE_ICS_URL
 # repository secret) every 20 minutes and updates the published schedule when
-# it changed. Guards (unknown class names, slot collisions, a week that
-# shrank by half or more) hold the publish and report through a GitHub issue
-# labeled schedule-sync instead. A manual run with allow_shrink accepts an
-# intentionally smaller week. Note: GitHub pauses cron workflows after 60
+# it changed. The calendar is the source of truth: any event title publishes,
+# and a class nobody has seen before is classified from its own words rather
+# than refused (REQ-087). One guard is left, a week that shrank by half or
+# more, which is what a mid-edit or wrong-calendar state looks like; it holds
+# the publish and opens an issue labeled schedule-sync, and a manual run with
+# allow_shrink accepts an intentionally smaller week. Note: GitHub pauses cron workflows after 60
 # days without repository activity; the Actions tab shows a re-enable banner
 # if that ever happens.
 name: Schedule sync
@@ -41,7 +43,24 @@ jobs:
           HAS_SECRET: ${{ secrets.SCHEDULE_ICS_URL != '' }}
         run: |
           echo "ready=$HAS_SECRET" >> "$GITHUB_OUTPUT"
-          [ "$HAS_SECRET" = "true" ] || echo "SCHEDULE_ICS_URL not set yet; nothing to sync"
+          if [ "$HAS_SECRET" != "true" ]; then
+            # A green tick on a run that did nothing is how this went unnoticed
+            # for months: the client reported the schedule was not syncing while
+            # every scheduled run reported success. The run stays green, because
+            # a missing secret is a configuration state and not a build failure,
+            # but it is now annotated and summarised so the Actions tab shows it.
+            echo "::warning title=Schedule sync is not configured::SCHEDULE_ICS_URL is not set, so this run published nothing. Add the calendar's secret iCal address under Settings, Secrets and variables, Actions."
+            {
+              echo "### Schedule sync did nothing"
+              echo
+              echo "\`SCHEDULE_ICS_URL\` is not set, so the sync had no calendar to read."
+              echo "Every run will keep reporting success and publishing nothing until it is."
+              echo
+              echo "Fix: Google Calendar, Settings for the gym's calendar, *Secret address in iCal format*,"
+              echo "then paste it into this repository under Settings, Secrets and variables, Actions,"
+              echo "as \`SCHEDULE_ICS_URL\`."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Sync schedule from calendar
         if: steps.config.outputs.ready == 'true'
         id: sync
@@ -62,21 +81,32 @@ jobs:
         run: |
           git config user.name "schedule-sync[bot]"
           git config user.email "schedule-sync[bot]@users.noreply.github.com"
-          git add schedule/index.html calendar/
+          git add schedule/index.html free-trial/index.html calendar/
           git commit -m "chore(schedule): calendar sync $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
           # request a Pages build explicitly: token pushes are not guaranteed
           # to trigger the branch build on their own
           gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
+      - name: Show what the sync read from the calendar
+        if: always() && steps.sync.outcome != 'skipped'
+        run: |
+          # Every run says what it made of the week. A class name nobody has
+          # seen before is published, not refused (REQ-087), so this is a
+          # record rather than a request: the summary is where you check the
+          # sync's reading of a new class, and nothing waits on you.
+          if [ -s sync-report.md ]; then
+            { echo "### Schedule sync"; echo; cat sync-report.md; } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### Schedule sync: no change this run" >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Report a held publish as an issue
-        if: steps.sync.outputs.code == '2' || steps.sync.outputs.code == '3'
+        if: steps.sync.outputs.code == '3'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh label create schedule-sync --color B45309 \
             --description "The class schedule sync needs a human" --force
-          TITLE="Schedule sync needs attention"
-          [ "${{ steps.sync.outputs.code }}" = "3" ] && TITLE="Schedule sync held: the week looks much smaller than usual"
+          TITLE="Schedule sync held: the week looks much smaller than usual"
           OPEN=$(gh issue list --label schedule-sync --state open --json number --jq '.[0].number')
           if [ -n "$OPEN" ]; then
             gh issue comment "$OPEN" --body-file sync-report.md

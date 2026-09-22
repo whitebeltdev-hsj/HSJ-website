@@ -1,13 +1,12 @@
 {
-  "comment": "Class names the schedule sync recognizes. display is rendered verbatim (U+2011 non-breaking hyphens included); matching against calendar event titles is case-insensitive and treats ASCII hyphens and U+2011 as the same character. category drives the scell color class and the per-program feeds; badge is the small audience label in the cell.",
-  "classes": [
-    { "display": "Fundamentals", "category": "adults", "badge": "Adults" },
-    { "display": "No‑Gi", "category": "adults", "badge": "Adults" },
-    { "display": "All‑Levels", "category": "adults", "badge": "Adults" },
-    { "display": "Open Mat", "category": "adults", "badge": "All welcome" },
-    { "display": "Competition", "category": "adults", "badge": "Advanced" },
-    { "display": "Kids", "category": "kids", "badge": "Ages 4-15" },
-    { "display": "Muay Thai", "category": "muaythai", "badge": "All levels" },
-    { "display": "Wrestling", "category": "wrestling", "badge": "All levels" }
-  ]
+  "comment": "OPTIONAL overrides for the schedule sync (REQ-087). The gym's Google Calendar is the source of truth and every event publishes on its own: a title nobody has seen before is classified from its own words, so this file being empty is a correct and expected configuration. Add an entry only to state a classification by hand, for example when a class name does not say which program it belongs to, or when you want a tidier name on the site than the one in the calendar. Match is case-insensitive and treats ASCII hyphens and U+2011 as the same character. Keys: match (the calendar event title; defaults to display), display (what the site prints), category (adults, kids, muaythai or wrestling; picks the cell colour, the program filter and the per-program feed), discipline, audience, level. Only the keys you set are applied, the rest stay inferred. Defaults that are never printed as a badge: audience Adults, level All levels.",
+  "example": {
+    "match": "Little Rattlers: Gi",
+    "display": "Little Rattlers",
+    "category": "kids",
+    "discipline": "Jiu Jitsu",
+    "audience": "Ages 4-6",
+    "level": "All levels"
+  },
+  "classes": []
 }
