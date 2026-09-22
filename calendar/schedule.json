@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T18:13:19-07:00",
+  "generated": "2026-09-21T18:51:11-07:00",
   "days": {
     "0": [],
     "1": [
@@ -13,16 +13,16 @@
       },
       {
         "t": "3:45pm",
-        "label": "Little Rattlers: Gi",
-        "prog": "Kids",
+        "label": "Little Rattlers: Gi (Ages 3-5)",
+        "prog": "Ages 3-5",
         "cat": "kids",
         "lvl": "All levels",
         "mins": 45
       },
       {
         "t": "4:30pm",
-        "label": "Kids Jiu Jitsu: Gi",
-        "prog": "Kids",
+        "label": "Kids Jiu Jitsu: Gi (Ages 6-14)",
+        "prog": "Ages 6-14",
         "cat": "kids",
         "lvl": "All levels",
         "mins": 60
@@ -71,8 +71,8 @@
       },
       {
         "t": "4:30pm",
-        "label": "Kids Jiu Jitsu: No-Gi",
-        "prog": "Kids",
+        "label": "Kids Jiu Jitsu: No-Gi (Ages 6-14)",
+        "prog": "Ages 6-14",
         "cat": "kids",
         "lvl": "All levels",
         "mins": 60
@@ -113,16 +113,16 @@
       },
       {
         "t": "3:45pm",
-        "label": "Little Rattlers: Gi",
-        "prog": "Kids",
+        "label": "Little Rattlers: Gi (Ages 3-5)",
+        "prog": "Ages 3-5",
         "cat": "kids",
         "lvl": "All levels",
         "mins": 45
       },
       {
         "t": "4:30pm",
-        "label": "Kids Jiu Jitsu: Gi",
-        "prog": "Kids",
+        "label": "Kids Jiu Jitsu: Gi (Ages 6-14)",
+        "prog": "Ages 6-14",
         "cat": "kids",
         "lvl": "All levels",
         "mins": 60
@@ -171,8 +171,8 @@
       },
       {
         "t": "4:30pm",
-        "label": "Kids Jiu Jitsu: No-Gi",
-        "prog": "Kids",
+        "label": "Kids Jiu Jitsu: No-Gi (Ages 6-14)",
+        "prog": "Ages 6-14",
         "cat": "kids",
         "lvl": "All levels",
         "mins": 60
@@ -229,8 +229,8 @@
       },
       {
         "t": "4:30pm",
-        "label": "Kids Jiu Jitsu: Gi",
-        "prog": "Kids",
+        "label": "Kids Jiu Jitsu: Gi (Ages 6-14)",
+        "prog": "Ages 6-14",
         "cat": "kids",
         "lvl": "All levels",
         "mins": 60
@@ -241,14 +241,6 @@
         "prog": "Adults",
         "cat": "adults",
         "lvl": "Advanced",
-        "mins": 30
-      },
-      {
-        "t": "5:30pm",
-        "label": "Jiu Jitsu Drilling",
-        "prog": "Adults",
-        "cat": "adults",
-        "lvl": "All levels",
         "mins": 30
       },
       {

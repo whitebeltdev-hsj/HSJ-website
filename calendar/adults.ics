@@ -180,17 +180,6 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
-DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T173000
-DTEND;TZID=America/Phoenix:20260109T180000
-RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Jiu Jitsu Drilling
-CATEGORIES:Jiu Jitsu,Adults,All levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
 UID:hsjj-5-1080-all-levels-jiu-jitsu-gi@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
 DTSTART;TZID=America/Phoenix:20260109T180000
