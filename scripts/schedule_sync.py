@@ -59,6 +59,17 @@ MARK_BEGIN = "<!-- schedule-sync:begin -->"
 MARK_END = "<!-- schedule-sync:end -->"
 DATA_BEGIN = "<!-- schedule-data:begin -->"
 DATA_END = "<!-- schedule-data:end -->"
+# REQ-115: the schedule page's search and link-preview descriptions are written
+# from the week too, so a week without wrestling never advertises wrestling.
+META_BEGIN = "<!-- schedule-meta:begin -->"
+META_END = "<!-- schedule-meta:end -->"
+# Front desk hours, not classes: the calendar does not hold them, and where
+# they should come from is REQ-115's open question. Kept here so the page's
+# description still carries them once the sync owns it.
+FRONT_DESK_HOURS = "Open Mon-Fri 6am-8pm and Sat 4-8pm."
+META_CATEGORIES = [("adults", "Jiu Jitsu"), ("kids", "kids classes"),
+                   ("muaythai", "Muay Thai"), ("wrestling", "wrestling")]
+META_DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 # feeds anchor on a fixed reference week (a past Monday) so regenerated
 # output is byte-stable day to day; RRULE:FREQ=WEEKLY keeps apps current
 ANCHOR_MONDAY = date(2026, 1, 5)
@@ -301,6 +312,46 @@ def build_slots(events, overrides, report):
     return slots
 
 
+def price_bullet_warnings(days):
+    """Report-only check for the two homepage plan-card bullets (REQ-108).
+
+    The Kids card promises Gi and No-Gi classes; the Adults card promises
+    morning, afternoon and evening classes. Both are claims about the week the
+    calendar publishes, and the calendar is never second-guessed (REQ-087), so
+    a stale bullet is named in the run summary and the publish goes ahead.
+    Returns a list of warning lines, empty when every bullet holds.
+    """
+    def mins_of(t):
+        m = re.match(r"^(\d{1,2}):(\d{2})(am|pm)$", t)
+        if not m:
+            return None
+        h, mi, ap = int(m.group(1)), int(m.group(2)), m.group(3)
+        h = h % 12 + (12 if ap == "pm" else 0)
+        return h * 60 + mi
+    adults = [mins_of(c["t"]) for cl in days.values() for c in cl if c.get("cat") == "adults"]
+    adults = [m for m in adults if m is not None]
+    kids_nogi = any(c.get("cat") == "kids" and "no-gi" in c["label"].lower()
+                    for cl in days.values() for c in cl)
+    out = []
+    missing = []
+    if not any(m < 12 * 60 for m in adults):
+        missing.append("morning (before 12:00pm)")
+    if not any(12 * 60 <= m < 17 * 60 for m in adults):
+        missing.append("afternoon (12:00pm to 4:59pm)")
+    if not any(m >= 17 * 60 for m in adults):
+        missing.append("evening (5:00pm or later)")
+    if missing:
+        out.append("Homepage Price bullet may be stale (REQ-108): the Adults card says "
+                   "\"Morning, afternoon, and evening classes\" but this week has no adult "
+                   "class in the " + ", ".join(missing) + ". The publish went ahead; update "
+                   "the bullet or the calendar.")
+    if not kids_nogi:
+        out.append("Homepage Price bullet may be stale (REQ-108): the Kids card says \"Gi and "
+                   "No-Gi classes included\" but this week has no kids class titled No-Gi. "
+                   "The publish went ahead; update the bullet or the calendar.")
+    return out
+
+
 def slot_count(slots):
     return sum(len(v) for v in slots.values())
 
@@ -379,7 +430,33 @@ def render_schedule_json(slots):
          "days": days}, indent=2) + "\n"
 
 
-def render_schedule_data(days):
+def render_schedule_meta(days):
+    """The schedule page's meta description and og:description (REQ-115).
+
+    Names only the categories that have a class this week and the span of
+    days that hold one, Monday first. A week without wrestling does not say
+    wrestling, and a week that ends on Friday does not say Saturday.
+    """
+    cats = [name for cat, name in META_CATEGORIES
+            if any(c["cat"] == cat for d in days.values() for c in d)]
+    if len(cats) > 1:
+        catstr = ", ".join(cats[:-1]) + " and " + cats[-1]
+    else:
+        catstr = cats[0] if cats else "classes"
+    present = [d for d in (1, 2, 3, 4, 5, 6, 0) if days.get(str(d))]
+    if not present:
+        span = "with no classes on the calendar this week"
+    elif present[0] == present[-1]:
+        span = "on " + META_DAY_NAMES[present[0]]
+    else:
+        span = META_DAY_NAMES[present[0]] + " to " + META_DAY_NAMES[present[-1]]
+    text = ("The weekly schedule at High Street Jiu Jitsu: " + catstr + ", " + span + ". "
+            + FRONT_DESK_HOURS)
+    return ('<meta name="description" content="' + esc(text) + '" />\n'
+            '<meta property="og:description" content="' + esc(text) + '" />')
+
+
+def render_schedule_data(days, generated=""):
     """The free-trial page's inline #scheduleData block.
 
     The booking wizard needs the week before it can draw a single chip, so
@@ -403,8 +480,10 @@ def render_schedule_data(days):
     for d in range(7):
         entries = ",".join(one(c) for c in days[str(d)])
         rows.append(f'  "{d}": [{entries}]')
-    return ('      <script type="application/json" id="scheduleData">\n{\n'
-            + ",\n".join(rows) + "\n}\n      </script>")
+    # data-generated carries the sync stamp for the wizard (REQ-115): the
+    # inline block is the only week the free-trial page reads
+    return ('      <script type="application/json" id="scheduleData" data-generated="'
+            + esc(generated) + '">\n{\n' + ",\n".join(rows) + "\n}\n      </script>")
 
 
 def ics_escape(s):
@@ -476,6 +555,8 @@ def main():
     ap.add_argument("--repo-root", default=str(Path(__file__).resolve().parent.parent))
     ap.add_argument("--allow-shrink", action="store_true")
     ap.add_argument("--report", default="sync-report.md")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="render everything, print the meta region and the counts, write nothing")
     args = ap.parse_args()
     root = Path(args.repo_root)
     report = []
@@ -504,12 +585,33 @@ def main():
             sys.exit(3)
 
         new_region = render_region(slots, DEFAULTS)
+        days, jtext = render_schedule_json(slots)
+        generated = json.loads(jtext)["generated"]
+        # informational only: a stale plan-card bullet never holds a publish
+        for line in price_bullet_warnings(days):
+            report.append(line)
+        if args.dry_run:
+            print(render_schedule_meta(days))
+            print(f"classes={total} dry-run, nothing written")
+            return
         changed = []
         if new_region != current_region:
             page_path.write_text(pre + MARK_BEGIN + "\n" + new_region + "\n        " + MARK_END + post)
             changed.append("schedule/index.html")
 
-        days, jtext = render_schedule_json(slots)
+        # the meta region on the same page, written from the same week
+        page = page_path.read_text()
+        if META_BEGIN in page and META_END in page:
+            pre_m, rest_m = page.split(META_BEGIN + "\n", 1)
+            cur_meta, post_m = rest_m.split("\n" + META_END, 1)
+            new_meta = render_schedule_meta(days)
+            if new_meta != cur_meta:
+                page_path.write_text(pre_m + META_BEGIN + "\n" + new_meta + "\n" + META_END + post_m)
+                if "schedule/index.html" not in changed:
+                    changed.append("schedule/index.html")
+        else:
+            report.append("schedule/index.html has no schedule-meta markers; the descriptions were not updated.")
+
         jf = root / "calendar" / "schedule.json"
         jbody = jtext.encode()
         # the generated stamp changes every run, so compare the week itself
@@ -529,7 +631,7 @@ def main():
             if DATA_BEGIN in tp and DATA_END in tp:
                 pre_t, rest_t = tp.split(DATA_BEGIN + "\n", 1)
                 cur_data, post_t = rest_t.split("\n      " + DATA_END, 1)
-                new_data = render_schedule_data(days)
+                new_data = render_schedule_data(days, generated)
                 if new_data != cur_data:
                     trial_path.write_text(pre_t + DATA_BEGIN + "\n" + new_data
                                           + "\n      " + DATA_END + post_t)

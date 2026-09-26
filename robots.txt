@@ -1,4 +1,4 @@
-# v4 preview guard: this deployment is a working copy at the v4 preview URL.
+# v5 preview guard: this deployment is a working copy at the v5 preview URL.
 # Do not index until the cutover decision lands (see docs/requirements/REQ-001).
 User-agent: *
 Disallow: /

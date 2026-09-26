@@ -1,0 +1,82 @@
+# Pages deploy (REQ-107): the site is published from an Actions build instead of
+# straight from the branch, so the daily copy of the gym's Google reviews can
+# ride along without ever being committed. Every push to main (a release, a
+# calendar sync) deploys, the daily run at 11:10 UTC (04:10 Phoenix, after the
+# last calendar sync of the night) refreshes the reviews, and a manual run does
+# both. The reviews step fails open: with no codes yet, or a refused token, the
+# site still deploys and the homepage shows its "Read our reviews on Google"
+# link. The build artifact is kept for one day, which keeps the reviews copy
+# inside Google's 30 day policy on its own.
+#
+# One-time client action: Settings, Pages, Source must be "GitHub Actions".
+name: Pages deploy
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "10 11 * * *"
+  workflow_dispatch:
+concurrency:
+  group: pages
+  cancel-in-progress: false
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read the gym's Google reviews (fails open)
+        env:
+          GBP_CLIENT_ID: ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN }}
+          GBP_LOCATION: ${{ vars.GBP_LOCATION }}
+        run: |
+          python scripts/reviews_fetch.py --out reviews/reviews.json
+          {
+            echo "### Reviews"
+            echo
+            python - <<'PY'
+          import json
+          d = json.load(open("reviews/reviews.json"))
+          if d.get("error"):
+              print("No reviews this run: `%s`. The homepage shows the link to Google." % d["error"])
+          else:
+              print("%d review(s), rating %s from %s, generated %s." % (len(d["reviews"]), d.get("averageRating"), d.get("totalReviewCount"), d["generated"]))
+          PY
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Read the Pages source (the deploy waits until it is GitHub Actions)
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          kind=$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq .build_type 2>/dev/null || echo unknown)
+          echo "source=$kind" >> "$GITHUB_OUTPUT"
+          if [ "$kind" != "workflow" ]; then
+            echo "Pages still deploys from the branch (source: $kind); the site is served as before and this run only checks the build. Settings, Pages, Source: GitHub Actions switches it over." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/configure-pages@v5
+        if: steps.pages.outputs.source == 'workflow'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.pages.outputs.source == 'workflow'
+        with:
+          path: .
+          retention-days: 1
+    outputs:
+      source: ${{ steps.pages.outputs.source }}
+  deploy:
+    needs: build
+    if: needs.build.outputs.source == 'workflow'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

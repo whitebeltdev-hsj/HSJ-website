@@ -25,6 +25,7 @@ permissions:
   contents: write
   issues: write
   pages: write
+  actions: write
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -84,8 +85,11 @@ jobs:
           git add schedule/index.html free-trial/index.html calendar/
           git commit -m "chore(schedule): calendar sync $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
-          # request a Pages build explicitly: token pushes are not guaranteed
-          # to trigger the branch build on their own
+          # a push made with the workflow token never starts another workflow,
+          # so ask the Pages deploy (REQ-107, .github/workflows/pages.yml) to
+          # run explicitly; the old branch build request stays for a repo whose
+          # Pages source is still the branch
+          gh workflow run pages.yml --ref main || true
           gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
       - name: Show what the sync read from the calendar
         if: always() && steps.sync.outcome != 'skipped'
