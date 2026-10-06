@@ -15,10 +15,10 @@ TZNAME:MST
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:hsjj-1-390-jiu-jitsu-morning-class-gi@highstreetjiujitsu.com
+UID:hsjj-1-360-jiu-jitsu-morning-class-gi@highstreetjiujitsu.com
 DTSTAMP:20260105T000000Z
-DTSTART;TZID=America/Phoenix:20260105T063000
-DTEND;TZID=America/Phoenix:20260105T073000
+DTSTART;TZID=America/Phoenix:20260105T060000
+DTEND;TZID=America/Phoenix:20260105T070000
 RRULE:FREQ=WEEKLY;BYDAY=MO
 SUMMARY:Jiu Jitsu Morning Class: GI
 CATEGORIES:Jiu Jitsu,Adults,All levels
@@ -147,10 +147,10 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-390-jiu-jitsu-morning-class-gi@highstreetjiujitsu.com
+UID:hsjj-3-360-jiu-jitsu-morning-class-gi@highstreetjiujitsu.com
 DTSTAMP:20260107T000000Z
-DTSTART;TZID=America/Phoenix:20260107T063000
-DTEND;TZID=America/Phoenix:20260107T073000
+DTSTART;TZID=America/Phoenix:20260107T060000
+DTEND;TZID=America/Phoenix:20260107T070000
 RRULE:FREQ=WEEKLY;BYDAY=WE
 SUMMARY:Jiu Jitsu Morning Class: GI
 CATEGORIES:Jiu Jitsu,Adults,All levels
@@ -279,10 +279,10 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-390-jiu-jitsu-morning-class-no-gi@highstreetjiujitsu.com
+UID:hsjj-5-360-jiu-jitsu-morning-class-no-gi@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T063000
-DTEND;TZID=America/Phoenix:20260109T073000
+DTSTART;TZID=America/Phoenix:20260109T060000
+DTEND;TZID=America/Phoenix:20260109T070000
 RRULE:FREQ=WEEKLY;BYDAY=FR
 SUMMARY:Jiu Jitsu Morning Class: NO-GI
 CATEGORIES:Jiu Jitsu,Adults,All levels
