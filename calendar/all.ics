@@ -355,4 +355,15 @@ CATEGORIES:Jiu Jitsu,All welcome,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-6-1020-all-levels-saturday-open-mat@highstreetjiujitsu.com
+DTSTAMP:20260110T000000Z
+DTSTART;TZID=America/Phoenix:20260110T170000
+DTEND;TZID=America/Phoenix:20260110T190000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+SUMMARY:All Levels Saturday Open Mat
+CATEGORIES:Jiu Jitsu,All welcome,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
 END:VCALENDAR
