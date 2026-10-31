@@ -2,7 +2,8 @@
 """Sync the published class schedule from the gym's Google Calendar feed.
 
 Runs inside the website repository (see .github/workflows/schedule-sync.yml).
-Reads the calendar's secret iCal feed, expands this week's events, and rewrites
+Reads the calendar's secret iCal feed, expands the gym's week (Sunday to
+Saturday, the one that contains today in Phoenix time, REQ-134), and rewrites
 the schedule wherever it is published:
 
   1. the table between <!-- schedule-sync:begin --> and
@@ -46,10 +47,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 TZ = ZoneInfo("America/Phoenix")
-# Monday .. Sunday. Sunday is index 6, last, because that is where it sits in the
-# printed week (REQ-074): the gym runs an occasional Sunday wrestling class and
-# had no column to put it in. The seventh column is emitted only in a week that
-# actually has a Sunday class, so an ordinary week still renders six.
+# Monday .. Sunday in Python's weekday order, so Sunday is index 6 here. In the
+# printed week Sunday comes FIRST and is always there (REQ-134: the gym's week
+# starts on Sunday), empty in a week that has no Sunday class.
 DAYS = 7
 BYDAY = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"]
 DAY_TH = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
@@ -228,9 +228,13 @@ def fetch_events(args, report):
         import icalendar
         import recurring_ical_events
         cal = icalendar.Calendar.from_ical(raw)
-        today = datetime.now(TZ).date()
-        monday = today - timedelta(days=today.weekday())
-        start = datetime.combine(monday, time(0, 0), tzinfo=TZ)
+        # The gym's week starts on Sunday (REQ-134, owner 2026-10-31), so the
+        # published week is the Sunday-to-Saturday span that contains today,
+        # and a schedule entered for next week shows from Sunday morning.
+        # --today is the test seam: a Phoenix calendar date, never a clock.
+        today = args.today or datetime.now(TZ).date()
+        sunday = today - timedelta(days=(today.weekday() + 1) % 7)
+        start = datetime.combine(sunday, time(0, 0), tzinfo=TZ)
         end = start + timedelta(days=DAYS)
         out = []
         for ev in recurring_ical_events.of(cal).between(start, end):
@@ -356,21 +360,17 @@ def slot_count(slots):
     return sum(len(v) for v in slots.values())
 
 
-def week_columns(slots):
-    """Mon to Sat always; Sunday only in a week that has a Sunday class.
-
-    AC-2 of REQ-074: an ordinary week must render exactly six columns and be
-    byte-identical to how it rendered before Sunday was supported, so the
-    seventh column cannot simply always be there and usually empty.
-    """
-    cols = list(range(6))
-    if any(wd == 6 for (wd, _) in slots):
-        cols.append(6)
-    return cols
+# The printed column order: Sunday first, then Monday to Saturday, every week
+# (REQ-134). The owner wants the Sunday column on the page whether or not this
+# week has a Sunday class: the gym's week starts on Sunday and Sunday classes
+# are coming, so an empty Sunday column is the true state of the week, not a
+# claim that the gym never opens on Sunday. REQ-074's disappearing column is
+# retired.
+PRINT_COLS = (6, 0, 1, 2, 3, 4, 5)
 
 
 def render_region(slots, defaults):
-    cols = week_columns(slots)
+    cols = list(PRINT_COLS)
     head = ("          <thead><tr><th scope=\"col\">Time</th>"
             + "".join(f"<th scope=\"col\">{DAY_TH[wd]}</th>" for wd in cols)
             + "</tr></thead>")
@@ -434,8 +434,8 @@ def render_schedule_meta(days):
     """The schedule page's meta description and og:description (REQ-115).
 
     Names only the categories that have a class this week and the span of
-    days that hold one, Monday first. A week without wrestling does not say
-    wrestling, and a week that ends on Friday does not say Saturday.
+    days that hold one, Sunday first (REQ-134). A week without wrestling does
+    not say wrestling, and a week that ends on Friday does not say Saturday.
     """
     cats = [name for cat, name in META_CATEGORIES
             if any(c["cat"] == cat for d in days.values() for c in d)]
@@ -443,7 +443,7 @@ def render_schedule_meta(days):
         catstr = ", ".join(cats[:-1]) + " and " + cats[-1]
     else:
         catstr = cats[0] if cats else "classes"
-    present = [d for d in (1, 2, 3, 4, 5, 6, 0) if days.get(str(d))]
+    present = [d for d in (0, 1, 2, 3, 4, 5, 6) if days.get(str(d))]
     if not present:
         span = "with no classes on the calendar this week"
     elif present[0] == present[-1]:
@@ -554,6 +554,9 @@ def main():
     ap.add_argument("--ics", help="read this ICS file instead of SCHEDULE_ICS_URL")
     ap.add_argument("--repo-root", default=str(Path(__file__).resolve().parent.parent))
     ap.add_argument("--allow-shrink", action="store_true")
+    ap.add_argument("--today", type=date.fromisoformat, metavar="YYYY-MM-DD",
+                    help="publish the week containing this Phoenix date instead of "
+                    "today; the test and walkthrough seam")
     ap.add_argument("--report", default="sync-report.md")
     ap.add_argument("--dry-run", action="store_true",
                     help="render everything, print the meta region and the counts, write nothing")
