@@ -37,24 +37,24 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-1-990-kids-jiu-jitsu-gi-ages-6-14@highstreetjiujitsu.com
+UID:hsjj-1-970-kids-jiu-jitsu-lvl1-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260105T000000Z
-DTSTART;TZID=America/Phoenix:20260105T163000
-DTEND;TZID=America/Phoenix:20260105T173000
+DTSTART;TZID=America/Phoenix:20260105T161000
+DTEND;TZID=America/Phoenix:20260105T170000
 RRULE:FREQ=WEEKLY;BYDAY=MO
-SUMMARY:Kids Jiu Jitsu: Gi (Ages 6-14)
+SUMMARY:Kids Jiu Jitsu: LVL1 Gi (Ages 6-14)
 CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-1-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
+UID:hsjj-1-1020-kids-jiu-jitsu-lvl2-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260105T000000Z
-DTSTART;TZID=America/Phoenix:20260105T173000
+DTSTART;TZID=America/Phoenix:20260105T170000
 DTEND;TZID=America/Phoenix:20260105T180000
 RRULE:FREQ=WEEKLY;BYDAY=MO
-SUMMARY:Jiu Jitsu Drilling
-CATEGORIES:Jiu Jitsu,Adults,All levels
+SUMMARY:Kids Jiu Jitsu: LVL2 Gi (Ages 6-14)
+CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
@@ -70,10 +70,10 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-1-1140-striking-class@highstreetjiujitsu.com
+UID:hsjj-1-1155-striking-class@highstreetjiujitsu.com
 DTSTAMP:20260105T000000Z
-DTSTART;TZID=America/Phoenix:20260105T190000
-DTEND;TZID=America/Phoenix:20260105T200000
+DTSTART;TZID=America/Phoenix:20260105T191500
+DTEND;TZID=America/Phoenix:20260105T201500
 RRULE:FREQ=WEEKLY;BYDAY=MO
 SUMMARY:Striking Class
 CATEGORIES:Striking,Adults,All levels
@@ -103,24 +103,24 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-2-990-kids-jiu-jitsu-no-gi-ages-6-14@highstreetjiujitsu.com
+UID:hsjj-2-970-kids-jiu-jitsu-lvl1-no-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260106T000000Z
-DTSTART;TZID=America/Phoenix:20260106T163000
-DTEND;TZID=America/Phoenix:20260106T173000
+DTSTART;TZID=America/Phoenix:20260106T161000
+DTEND;TZID=America/Phoenix:20260106T170000
 RRULE:FREQ=WEEKLY;BYDAY=TU
-SUMMARY:Kids Jiu Jitsu: No-Gi (Ages 6-14)
+SUMMARY:Kids Jiu Jitsu: LVL1 No-Gi (Ages 6-14)
 CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-2-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
+UID:hsjj-2-1020-kids-jiu-jitsu-lvl2-no-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260106T000000Z
-DTSTART;TZID=America/Phoenix:20260106T173000
+DTSTART;TZID=America/Phoenix:20260106T170000
 DTEND;TZID=America/Phoenix:20260106T180000
 RRULE:FREQ=WEEKLY;BYDAY=TU
-SUMMARY:Jiu Jitsu Drilling
-CATEGORIES:Jiu Jitsu,Adults,All levels
+SUMMARY:Kids Jiu Jitsu: LVL2 No Gi (Ages 6-14)
+CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
@@ -136,10 +136,10 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-2-1140-striking-class@highstreetjiujitsu.com
+UID:hsjj-2-1155-striking-class@highstreetjiujitsu.com
 DTSTAMP:20260106T000000Z
-DTSTART;TZID=America/Phoenix:20260106T190000
-DTEND;TZID=America/Phoenix:20260106T200000
+DTSTART;TZID=America/Phoenix:20260106T191500
+DTEND;TZID=America/Phoenix:20260106T201500
 RRULE:FREQ=WEEKLY;BYDAY=TU
 SUMMARY:Striking Class
 CATEGORIES:Striking,Adults,All levels
@@ -169,24 +169,24 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-990-kids-jiu-jitsu-gi-ages-6-14@highstreetjiujitsu.com
+UID:hsjj-3-970-kids-jiu-jitsu-lvl1-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260107T000000Z
-DTSTART;TZID=America/Phoenix:20260107T163000
-DTEND;TZID=America/Phoenix:20260107T173000
+DTSTART;TZID=America/Phoenix:20260107T161000
+DTEND;TZID=America/Phoenix:20260107T170000
 RRULE:FREQ=WEEKLY;BYDAY=WE
-SUMMARY:Kids Jiu Jitsu: Gi (Ages 6-14)
+SUMMARY:Kids Jiu Jitsu: LVL1 Gi (Ages 6-14)
 CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
+UID:hsjj-3-1020-kids-jiu-jitsu-lvl2-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260107T000000Z
-DTSTART;TZID=America/Phoenix:20260107T173000
+DTSTART;TZID=America/Phoenix:20260107T170000
 DTEND;TZID=America/Phoenix:20260107T180000
 RRULE:FREQ=WEEKLY;BYDAY=WE
-SUMMARY:Jiu Jitsu Drilling
-CATEGORIES:Jiu Jitsu,Adults,All levels
+SUMMARY:Kids Jiu Jitsu: LVL2 Gi (Ages 6-14)
+CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
@@ -202,10 +202,10 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-3-1140-striking-class@highstreetjiujitsu.com
+UID:hsjj-3-1155-striking-class@highstreetjiujitsu.com
 DTSTAMP:20260107T000000Z
-DTSTART;TZID=America/Phoenix:20260107T190000
-DTEND;TZID=America/Phoenix:20260107T200000
+DTSTART;TZID=America/Phoenix:20260107T191500
+DTEND;TZID=America/Phoenix:20260107T201500
 RRULE:FREQ=WEEKLY;BYDAY=WE
 SUMMARY:Striking Class
 CATEGORIES:Striking,Adults,All levels
@@ -235,24 +235,35 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-4-990-kids-jiu-jitsu-no-gi-ages-6-14@highstreetjiujitsu.com
+UID:hsjj-4-945-little-rattlers-no-gi-ages-3-5@highstreetjiujitsu.com
 DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T163000
-DTEND;TZID=America/Phoenix:20260108T173000
+DTSTART;TZID=America/Phoenix:20260108T154500
+DTEND;TZID=America/Phoenix:20260108T163000
 RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:Kids Jiu Jitsu: No-Gi (Ages 6-14)
+SUMMARY:Little Rattlers: No Gi (Ages 3-5)
+CATEGORIES:Jiu Jitsu,Ages 3-5,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-4-970-kids-jiu-jitsu-lvl1-no-gi-ages-6-14@highstreetjiujitsu.com
+DTSTAMP:20260108T000000Z
+DTSTART;TZID=America/Phoenix:20260108T161000
+DTEND;TZID=America/Phoenix:20260108T170000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:Kids Jiu Jitsu: LVL1 No-Gi (Ages 6-14)
 CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-4-1050-jiu-jitsu-drilling@highstreetjiujitsu.com
+UID:hsjj-4-1020-kids-jiu-jitsu-lvl2-no-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T173000
+DTSTART;TZID=America/Phoenix:20260108T170000
 DTEND;TZID=America/Phoenix:20260108T180000
 RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:Jiu Jitsu Drilling
-CATEGORIES:Jiu Jitsu,Adults,All levels
+SUMMARY:Kids Jiu Jitsu: LVL2 No Gi (Ages 6-14)
+CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
@@ -268,10 +279,10 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-4-1140-striking-class@highstreetjiujitsu.com
+UID:hsjj-4-1155-striking-class@highstreetjiujitsu.com
 DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T190000
-DTEND;TZID=America/Phoenix:20260108T200000
+DTSTART;TZID=America/Phoenix:20260108T191500
+DTEND;TZID=America/Phoenix:20260108T201500
 RRULE:FREQ=WEEKLY;BYDAY=TH
 SUMMARY:Striking Class
 CATEGORIES:Striking,Adults,All levels
@@ -279,13 +290,24 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-360-jiu-jitsu-morning-class-no-gi@highstreetjiujitsu.com
+UID:hsjj-5-360-jiu-jitsu-morning-class-nogi@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
 DTSTART;TZID=America/Phoenix:20260109T060000
 DTEND;TZID=America/Phoenix:20260109T070000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Jiu Jitsu Morning Class: NO-GI
+SUMMARY:Jiu Jitsu Morning Class: NoGi
 CATEGORIES:Jiu Jitsu,Adults,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-5-660-kids-jiu-jitsu-no-gi@highstreetjiujitsu.com
+DTSTAMP:20260109T000000Z
+DTSTART;TZID=America/Phoenix:20260109T110000
+DTEND;TZID=America/Phoenix:20260109T120000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+SUMMARY:Kids Jiu Jitsu: No Gi
+CATEGORIES:Jiu Jitsu,Kids,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
@@ -312,46 +334,47 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-990-kids-jiu-jitsu-gi-ages-6-14@highstreetjiujitsu.com
+UID:hsjj-5-970-kids-jiu-jitsu-lvl1-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T163000
-DTEND;TZID=America/Phoenix:20260109T173000
+DTSTART;TZID=America/Phoenix:20260109T161000
+DTEND;TZID=America/Phoenix:20260109T170000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Kids Jiu Jitsu: Gi (Ages 6-14)
+SUMMARY:Kids Jiu Jitsu: LVL1 Gi (Ages 6-14)
 CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-1050-competition-class@highstreetjiujitsu.com
+UID:hsjj-5-1020-kids-jiu-jitsu-lvl2-gi-ages-6-14@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T173000
+DTSTART;TZID=America/Phoenix:20260109T170000
 DTEND;TZID=America/Phoenix:20260109T180000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Competition Class
-CATEGORIES:Adults,Advanced
+SUMMARY:Kids Jiu Jitsu: LVL2 Gi (Ages 6-14)
+CATEGORIES:Jiu Jitsu,Ages 6-14,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-1080-all-levels-jiu-jitsu-gi@highstreetjiujitsu.com
+UID:hsjj-5-1080-kids-adults-competition-training-gi-and-nogi@highstreetjiu
+ jitsu.com
 DTSTAMP:20260109T000000Z
 DTSTART;TZID=America/Phoenix:20260109T180000
 DTEND;TZID=America/Phoenix:20260109T191500
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:All Levels Jiu Jitsu: Gi
-CATEGORIES:Jiu Jitsu,Adults,All levels
+SUMMARY:Kids & Adults Competition Training: Gi and NoGi
+CATEGORIES:Jiu Jitsu,Kids,Advanced
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-6-960-saturday-open-mat@highstreetjiujitsu.com
+UID:hsjj-6-960-woman-kids-saturday-open-mat@highstreetjiujitsu.com
 DTSTAMP:20260110T000000Z
 DTSTART;TZID=America/Phoenix:20260110T160000
-DTEND;TZID=America/Phoenix:20260110T200000
+DTEND;TZID=America/Phoenix:20260110T170000
 RRULE:FREQ=WEEKLY;BYDAY=SA
-SUMMARY:Saturday Open Mat
-CATEGORIES:Jiu Jitsu,All welcome,All levels
+SUMMARY:Woman & Kids Saturday Open Mat
+CATEGORIES:Jiu Jitsu,Kids,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
@@ -363,6 +386,16 @@ DTEND;TZID=America/Phoenix:20260110T190000
 RRULE:FREQ=WEEKLY;BYDAY=SA
 SUMMARY:All Levels Saturday Open Mat
 CATEGORIES:Jiu Jitsu,All welcome,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-once-20261101-780-wrestling-class@highstreetjiujitsu.com
+DTSTAMP:20261101T000000Z
+DTSTART;TZID=America/Phoenix:20261101T130000
+DTEND;TZID=America/Phoenix:20261101T150000
+SUMMARY:Wrestling Class
+CATEGORIES:Wrestling,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
