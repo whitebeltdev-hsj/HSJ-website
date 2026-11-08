@@ -389,14 +389,4 @@ CATEGORIES:Jiu Jitsu,All welcome,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-once-20261101-780-wrestling-class@highstreetjiujitsu.com
-DTSTAMP:20261101T000000Z
-DTSTART;TZID=America/Phoenix:20261101T130000
-DTEND;TZID=America/Phoenix:20261101T150000
-SUMMARY:Wrestling Class
-CATEGORIES:Wrestling,Adults,All levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
 END:VCALENDAR
