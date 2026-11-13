@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-08T01:41:10-07:00",
+  "generated": "2026-11-13T14:36:16-07:00",
   "days": {
-    "0": [],
+    "0": [
+      {
+        "t": "1:00pm",
+        "label": "Wrestling Class",
+        "prog": "Adults",
+        "cat": "wrestling",
+        "lvl": "All levels",
+        "mins": 120
+      }
+    ],
     "1": [
       {
         "t": "6:00am",
