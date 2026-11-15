@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T14:36:16-07:00",
+  "generated": "2026-11-15T16:48:58-07:00",
   "days": {
     "0": [
       {
@@ -13,7 +13,7 @@
     ],
     "1": [
       {
-        "t": "6:00am",
+        "t": "6:30am",
         "label": "Jiu Jitsu Morning Class: GI",
         "prog": "Adults",
         "cat": "adults",
@@ -113,7 +113,7 @@
     ],
     "3": [
       {
-        "t": "6:00am",
+        "t": "6:30am",
         "label": "Jiu Jitsu Morning Class: GI",
         "prog": "Adults",
         "cat": "adults",
@@ -221,7 +221,7 @@
     ],
     "5": [
       {
-        "t": "6:00am",
+        "t": "6:30am",
         "label": "Jiu Jitsu Morning Class: NoGi",
         "prog": "Adults",
         "cat": "adults",
