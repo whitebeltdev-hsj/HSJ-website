@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T16:48:58-07:00",
+  "generated": "2026-11-23T04:15:06-07:00",
   "days": {
     "0": [
       {
@@ -161,122 +161,8 @@
         "mins": 60
       }
     ],
-    "4": [
-      {
-        "t": "11:00am",
-        "label": "Kids Jiu Jitsu: Gi",
-        "prog": "Kids",
-        "cat": "kids",
-        "lvl": "All levels",
-        "mins": 60
-      },
-      {
-        "t": "12:00pm",
-        "label": "All Levels Jiu Jitsu: Gi",
-        "prog": "Adults",
-        "cat": "adults",
-        "lvl": "All levels",
-        "mins": 60
-      },
-      {
-        "t": "3:45pm",
-        "label": "Little Rattlers: No Gi (Ages 3-5)",
-        "prog": "Ages 3-5",
-        "cat": "kids",
-        "lvl": "All levels",
-        "mins": 45
-      },
-      {
-        "t": "4:10pm",
-        "label": "Kids Jiu Jitsu: LVL1 No-Gi (Ages 6-14)",
-        "prog": "Ages 6-14",
-        "cat": "kids",
-        "lvl": "All levels",
-        "mins": 50
-      },
-      {
-        "t": "5:00pm",
-        "label": "Kids Jiu Jitsu: LVL2 No Gi (Ages 6-14)",
-        "prog": "Ages 6-14",
-        "cat": "kids",
-        "lvl": "All levels",
-        "mins": 60
-      },
-      {
-        "t": "6:00pm",
-        "label": "All Levels Jiu Jitsu: No-Gi",
-        "prog": "Adults",
-        "cat": "adults",
-        "lvl": "All levels",
-        "mins": 75
-      },
-      {
-        "t": "7:15pm",
-        "label": "Striking Class",
-        "prog": "Adults",
-        "cat": "muaythai",
-        "lvl": "All levels",
-        "mins": 60
-      }
-    ],
-    "5": [
-      {
-        "t": "6:30am",
-        "label": "Jiu Jitsu Morning Class: NoGi",
-        "prog": "Adults",
-        "cat": "adults",
-        "lvl": "All levels",
-        "mins": 60
-      },
-      {
-        "t": "11:00am",
-        "label": "Kids Jiu Jitsu: No Gi",
-        "prog": "Kids",
-        "cat": "kids",
-        "lvl": "All levels",
-        "mins": 60
-      },
-      {
-        "t": "12:00pm",
-        "label": "All Levels Jiu Jitsu: No-Gi",
-        "prog": "Adults",
-        "cat": "adults",
-        "lvl": "All levels",
-        "mins": 60
-      },
-      {
-        "t": "3:00pm",
-        "label": "Advanced Striking",
-        "prog": "Adults",
-        "cat": "muaythai",
-        "lvl": "Advanced",
-        "mins": 60
-      },
-      {
-        "t": "4:10pm",
-        "label": "Kids Jiu Jitsu: LVL1 Gi (Ages 6-14)",
-        "prog": "Ages 6-14",
-        "cat": "kids",
-        "lvl": "All levels",
-        "mins": 50
-      },
-      {
-        "t": "5:00pm",
-        "label": "Kids Jiu Jitsu: LVL2 Gi (Ages 6-14)",
-        "prog": "Ages 6-14",
-        "cat": "kids",
-        "lvl": "All levels",
-        "mins": 60
-      },
-      {
-        "t": "6:00pm",
-        "label": "Kids & Adults Competition Training: Gi and NoGi",
-        "prog": "Kids",
-        "cat": "kids",
-        "lvl": "Advanced",
-        "mins": 75
-      }
-    ],
+    "4": [],
+    "5": [],
     "6": [
       {
         "t": "4:00pm",

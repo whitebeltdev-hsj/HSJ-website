@@ -81,50 +81,6 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-4-720-all-levels-jiu-jitsu-gi@highstreetjiujitsu.com
-DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T120000
-DTEND;TZID=America/Phoenix:20260108T130000
-RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:All Levels Jiu Jitsu: Gi
-CATEGORIES:Jiu Jitsu,Adults,All levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-4-1080-all-levels-jiu-jitsu-no-gi@highstreetjiujitsu.com
-DTSTAMP:20260108T000000Z
-DTSTART;TZID=America/Phoenix:20260108T180000
-DTEND;TZID=America/Phoenix:20260108T191500
-RRULE:FREQ=WEEKLY;BYDAY=TH
-SUMMARY:All Levels Jiu Jitsu: No-Gi
-CATEGORIES:Jiu Jitsu,Adults,All levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-5-390-jiu-jitsu-morning-class-nogi@highstreetjiujitsu.com
-DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T063000
-DTEND;TZID=America/Phoenix:20260109T073000
-RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Jiu Jitsu Morning Class: NoGi
-CATEGORIES:Jiu Jitsu,Adults,All levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-5-720-all-levels-jiu-jitsu-no-gi@highstreetjiujitsu.com
-DTSTAMP:20260109T000000Z
-DTSTART;TZID=America/Phoenix:20260109T120000
-DTEND;TZID=America/Phoenix:20260109T130000
-RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:All Levels Jiu Jitsu: No-Gi
-CATEGORIES:Jiu Jitsu,Adults,All levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
 UID:hsjj-6-1020-all-levels-saturday-open-mat@highstreetjiujitsu.com
 DTSTAMP:20260110T000000Z
 DTSTART;TZID=America/Phoenix:20260110T170000
