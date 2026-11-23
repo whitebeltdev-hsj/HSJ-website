@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-23T04:15:06-07:00",
+  "generated": "2026-11-23T15:43:41-07:00",
   "days": {
     "0": [
       {
         "t": "1:00pm",
-        "label": "Wrestling Class",
+        "label": "HSJ Wrestling Class",
         "prog": "Adults",
         "cat": "wrestling",
         "lvl": "All levels",
@@ -162,11 +162,20 @@
       }
     ],
     "4": [],
-    "5": [],
+    "5": [
+      {
+        "t": "12:00pm",
+        "label": "Open Mat Only",
+        "prog": "All welcome",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 120
+      }
+    ],
     "6": [
       {
         "t": "4:00pm",
-        "label": "Woman & Kids Saturday Open Mat",
+        "label": "Woman & Kids Saturday Open Mat: Gi/NoGI",
         "prog": "Kids",
         "cat": "kids",
         "lvl": "All levels",
@@ -174,7 +183,7 @@
       },
       {
         "t": "5:00pm",
-        "label": "All Levels Saturday Open Mat",
+        "label": "All Levels Saturday Open Mat: Gi/NoGI",
         "prog": "All welcome",
         "cat": "adults",
         "lvl": "All levels",

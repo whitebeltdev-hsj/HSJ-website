@@ -213,33 +213,45 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-6-960-woman-kids-saturday-open-mat@highstreetjiujitsu.com
-DTSTAMP:20260110T000000Z
-DTSTART;TZID=America/Phoenix:20260110T160000
-DTEND;TZID=America/Phoenix:20260110T170000
-RRULE:FREQ=WEEKLY;BYDAY=SA
-SUMMARY:Woman & Kids Saturday Open Mat
-CATEGORIES:Jiu Jitsu,Kids,All levels
-LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
- 54
-END:VEVENT
-BEGIN:VEVENT
-UID:hsjj-6-1020-all-levels-saturday-open-mat@highstreetjiujitsu.com
-DTSTAMP:20260110T000000Z
-DTSTART;TZID=America/Phoenix:20260110T170000
-DTEND;TZID=America/Phoenix:20260110T190000
-RRULE:FREQ=WEEKLY;BYDAY=SA
-SUMMARY:All Levels Saturday Open Mat
+UID:hsjj-5-720-open-mat-only@highstreetjiujitsu.com
+DTSTAMP:20260109T000000Z
+DTSTART;TZID=America/Phoenix:20260109T120000
+DTEND;TZID=America/Phoenix:20260109T140000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+SUMMARY:Open Mat Only
 CATEGORIES:Jiu Jitsu,All welcome,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-once-20261122-780-wrestling-class@highstreetjiujitsu.com
+UID:hsjj-6-960-woman-kids-saturday-open-mat-gi-nogi@highstreetjiujitsu.com
+DTSTAMP:20260110T000000Z
+DTSTART;TZID=America/Phoenix:20260110T160000
+DTEND;TZID=America/Phoenix:20260110T170000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+SUMMARY:Woman & Kids Saturday Open Mat: Gi/NoGI
+CATEGORIES:Jiu Jitsu,Kids,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-6-1020-all-levels-saturday-open-mat-gi-nogi@highstreetjiujitsu.co
+ m
+DTSTAMP:20260110T000000Z
+DTSTART;TZID=America/Phoenix:20260110T170000
+DTEND;TZID=America/Phoenix:20260110T190000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+SUMMARY:All Levels Saturday Open Mat: Gi/NoGI
+CATEGORIES:Jiu Jitsu,All welcome,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-once-20261122-780-hsj-wrestling-class@highstreetjiujitsu.com
 DTSTAMP:20261122T000000Z
 DTSTART;TZID=America/Phoenix:20261122T130000
 DTEND;TZID=America/Phoenix:20261122T150000
-SUMMARY:Wrestling Class
+SUMMARY:HSJ Wrestling Class
 CATEGORIES:Wrestling,Adults,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54

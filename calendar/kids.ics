@@ -114,12 +114,12 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-6-960-woman-kids-saturday-open-mat@highstreetjiujitsu.com
+UID:hsjj-6-960-woman-kids-saturday-open-mat-gi-nogi@highstreetjiujitsu.com
 DTSTAMP:20260110T000000Z
 DTSTART;TZID=America/Phoenix:20260110T160000
 DTEND;TZID=America/Phoenix:20260110T170000
 RRULE:FREQ=WEEKLY;BYDAY=SA
-SUMMARY:Woman & Kids Saturday Open Mat
+SUMMARY:Woman & Kids Saturday Open Mat: Gi/NoGI
 CATEGORIES:Jiu Jitsu,Kids,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
