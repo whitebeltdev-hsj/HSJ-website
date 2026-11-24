@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T15:43:41-07:00",
+  "generated": "2026-11-23T23:48:13-07:00",
   "days": {
     "0": [
       {
@@ -161,11 +161,20 @@
         "mins": 60
       }
     ],
-    "4": [],
+    "4": [
+      {
+        "t": "6:00am",
+        "label": "Closed Thanksgiving Day",
+        "prog": "Adults",
+        "cat": "adults",
+        "lvl": "All levels",
+        "mins": 840
+      }
+    ],
     "5": [
       {
         "t": "12:00pm",
-        "label": "Open Mat Only",
+        "label": "All Levels Open Mat",
         "prog": "All welcome",
         "cat": "adults",
         "lvl": "All levels",

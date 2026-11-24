@@ -81,12 +81,23 @@ LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
 END:VEVENT
 BEGIN:VEVENT
-UID:hsjj-5-720-open-mat-only@highstreetjiujitsu.com
+UID:hsjj-4-360-closed-thanksgiving-day@highstreetjiujitsu.com
+DTSTAMP:20260108T000000Z
+DTSTART;TZID=America/Phoenix:20260108T060000
+DTEND;TZID=America/Phoenix:20260108T200000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:Closed Thanksgiving Day
+CATEGORIES:Adults,All levels
+LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
+ 54
+END:VEVENT
+BEGIN:VEVENT
+UID:hsjj-5-720-all-levels-open-mat@highstreetjiujitsu.com
 DTSTAMP:20260109T000000Z
 DTSTART;TZID=America/Phoenix:20260109T120000
 DTEND;TZID=America/Phoenix:20260109T140000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-SUMMARY:Open Mat Only
+SUMMARY:All Levels Open Mat
 CATEGORIES:Jiu Jitsu,All welcome,All levels
 LOCATION:High Street Jiu Jitsu\, 5310 E High St Ste 102\, Phoenix\, AZ 850
  54
